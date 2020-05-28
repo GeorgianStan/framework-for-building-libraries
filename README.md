@@ -19,6 +19,89 @@ The output will be placed inside `dist` folder and it's represented by two files
 
 Default, Webpack is configured to include the CSS code inside the JavaScript file which will create the `<style></style>` tag and populate it with the corresponding style.
 
+If you want to place the CSS output in a separate file and have them both included in your application then cut these lines from `config` object
+
+```javascript
+{
+test: /\.s?css$/,
+use: [
+    'style-loader',
+    {
+        loader: 'postcss-loader',
+        options: {
+            config: {
+                path: 'postcss.config.js',
+            },
+        },
+    },
+    'sass-loader',
+    ],
+},
+```
+
+and place them here
+
+```javascript
+module.exports = (env, argv) => {
+  if (argv.mode === 'development') {
+    // * add some development rules here
+  } else if (argv.mode === 'production') {
+    // * add some prod rules here
+  } else {
+    throw new Error('Specify env');
+  }
+
+  return config;
+};
+```
+
+Full example:
+
+```javascript
+module.exports = (env, argv) => {
+  if (argv.mode === 'development') {
+    // * scss
+    config.module.rules.push({
+      test: /\.s?css$/,
+      use: [
+        'style-loader',
+        {
+          loader: 'postcss-loader',
+          options: {
+            sourceMap: true,
+            config: {
+              path: 'postcss.config.js',
+            },
+          },
+        },
+        'sass-loader',
+      ],
+    });
+  } else if (argv.mode === 'production') {
+    config.module.rules.push({
+      test: /\.s?css$/,
+      use: [
+        'style-loader',
+        {
+          loader: 'postcss-loader',
+          options: {
+            config: {
+              path: 'postcss.config.js',
+            },
+          },
+        },
+
+        'sass-loader',
+      ],
+    });
+  } else {
+    throw new Error('Specify env');
+  }
+
+  return config;
+};
+```
+
 ## Start developing your library (and testing)
 
 1. Inside src folder, change the name of the main file, from `my-library.ts` to the desired filename.
