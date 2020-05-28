@@ -1,0 +1,26 @@
+
+# source code
+src
+index.html
+
+# compiler
+tsconfig.json
+webpack.config.js
+postcss.config.js
+
+
+# tests
+test
+jest.config.js
+setupJest.ts
+coverage
+
+#  lint
+.eslintrc.js
+.prettierrc
+
+# IDE - VSCode
+.vscode
+
+# git
+.git
