@@ -146,6 +146,7 @@ The exports are available under the name set in `library` property.
 
 ```html
 <script src="./dist/my-library.js"></script>
+<script>
   const { isPrimeNumber } = window.MyLibrary;
 </script>
 ```
