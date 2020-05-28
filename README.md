@@ -167,7 +167,7 @@ import { isPrimeNumber } from '../src/my-library';
   ],
   ```
 
-- Build before publish - you can add this property inside `package.json` in `scripts` object, if you need a hook before you publish your package. This command will be executed when you run `npm publish`, but before publihing the code.
+- Build before publish - you can add this property inside `package.json` in `scripts` object, if you need a hook before you publish your package. This command will be executed when you run `npm publish`, but before publishing the code.
 
   ```json
   "prepublishOnly": "webpack --mode=production",
