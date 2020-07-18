@@ -1,4 +1,4 @@
-# Framework for building libraries and npm packages
+# Starter project for building npm packages
 
 ## Commands
 
@@ -102,14 +102,12 @@ module.exports = (env, argv) => {
 };
 ```
 
-## Start developing your library (and testing)
+## Start developing your library
 
 1. Inside src folder, change the name of the main file, from `my-library.ts` to the desired filename.
 2. Update this name inside `package.json` in `main` and `types` properties.
 3. Update this name in `webpack.config.js` in `entry` and `output` properties.
-4. To test your code just import it in any test file like in the example from `test` folder.
-5. To test the code on the UI, update the `<script></script>` tag in `index.html` file.
-6. Open `index.html` with a Live Server or as a simple file and test the library.
+4. `npm run start:dev` will run your code with webpack dev server. Edit `./public/index.html`
 
 ## Browser or node
 
@@ -142,10 +140,10 @@ output: {
 
 The exports are available under the name set in `library` property.
 
-`index.html`
+`.html`
 
 ```html
-<script src="./dist/my-library.js"></script>
+<script src="./my-library.js"></script>
 <script>
   const { isPrimeNumber } = window.MyLibrary;
 </script>
