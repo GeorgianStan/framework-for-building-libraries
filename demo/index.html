@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo library framework</title>
 
-    <script src="./dist/my-library.js"></script>
+    <script src="../dist/my-library.js"></script>
   </head>
   <body>
+    <p id="is-prime"></p>
+    <p id="is-not-prime"></p>
     <script>
       const { isPrimeNumber } = window.MyLibrary;
 
-      console.log(isPrimeNumber);
+      document.querySelector('#is-prime').innerHTML = isPrimeNumber(3);
+      document.querySelector('#is-not-prime').innerHTML = isPrimeNumber(4);
     </script>
   </body>
 </html>

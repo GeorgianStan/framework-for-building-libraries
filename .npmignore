@@ -8,6 +8,10 @@ tsconfig.json
 webpack.config.js
 postcss.config.js
 
+# files
+*.log
+cypress.json
+*.code-workspace
 
 # tests
 test

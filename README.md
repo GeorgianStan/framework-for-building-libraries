@@ -108,7 +108,7 @@ module.exports = (env, argv) => {
 2. Update this name inside `package.json` in `main` and `types` properties.
 3. Update this name in `webpack.config.js` in `entry` and `output` properties.
 4. To test your code just import it in any test file like in the example from `test` folder.
-5. To test the code on the UI, update the `<script></script>` tag in `index.html` file.
+5. To test the code on the UI, update the `<script></script>` tag in `index.html` file from `demo` folder.
 6. Open `index.html` with a Live Server or as a simple file and test the library.
 
 ## Browser or node
@@ -176,6 +176,20 @@ import { isPrimeNumber } from '../src/my-library';
 - Versioning - each time you run `npm publish`, be sure to update the version in `"version": "1.0.0"` property inside `package.json`. Otherwise you won't be able to deploy a new version.
 
 - Ignoring files - use `.npmgignore` in the same way as `.gitignore`, but for npm
+
+## Testing
+
+For more indeepth testing, `Jest` and `Cypress` are configured and they both contain a dummy example.
+
+### Jest
+
+`npm run test`
+`npm run test:watch`
+`npm run test:cov`
+
+### Cypress
+
+`npx cypress open`
 
 ## CDN
 

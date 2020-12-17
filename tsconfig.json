@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "typeRoots": ["@types", "./node_modules/@types"],
     "module": "es6",
     "target": "es5",
     "noImplicitAny": true,

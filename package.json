@@ -1,6 +1,6 @@
 {
   "name": "framework-for-building-libraries",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A framework for building js libraries using TS and SCSS",
   "main": "./dist/my-library.js",
   "types": "./dist/my-library.d.ts",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeoPablo/framework-for-building-libraries.git"
+    "url": "git+https://github.com/GeorgianStan/framework-for-building-libraries.git"
   },
   "keywords": [
     "framework",
@@ -31,30 +31,32 @@
   "author": "Stan Georgian",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GeoPablo/framework-for-building-libraries/issues"
+    "url": "https://github.com/GeorgianStan/framework-for-building-libraries/issues",
+    "email": "georgian.stan8@gmail.com"
   },
-  "homepage": "https://github.com/GeoPablo/framework-for-building-libraries#readme",
+  "homepage": "https://github.com/GeorgianStan/framework-for-building-libraries#readme",
   "devDependencies": {
-    "@babel/core": "^7.10.1",
-    "@types/jest": "^25.2.3",
-    "@typescript-eslint/eslint-plugin": "^3.0.2",
-    "@typescript-eslint/parser": "^3.0.2",
-    "autoprefixer": "^9.8.0",
-    "babel-loader": "^8.1.0",
+    "@babel/core": "^7.12.10",
+    "@types/jest": "^26.0.19",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
-    "eslint": "^7.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.20.2",
-    "jest": "^26.0.1",
-    "node-sass": "^4.14.1",
-    "postcss-loader": "^3.0.0",
-    "prettier": "^2.0.5",
-    "sass-loader": "^8.0.2",
-    "style-loader": "^1.2.1",
-    "ts-jest": "^26.0.0",
-    "ts-loader": "^7.0.5",
-    "typescript": "^3.9.3",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "cypress": "^6.1.0",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "node-sass": "^5.0.0",
+    "postcss-loader": "^4.1.0",
+    "prettier": "^2.2.1",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "ts-jest": "^26.4.4",
+    "ts-loader": "^8.0.12",
+    "typescript": "^4.1.3",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
   }
 }
