@@ -14,8 +14,6 @@ The repository now contains a boilerplate for building NodeJS global packages as
 
 ## [v1.1.0](https://github.com/GeorgianStan/framework-for-building-libraries/compare/v1.0.0...v1.1.0) (2020-12-17)
 
----
-
 ### Chore
 
 - updated & upgraded toolchain's libraries
