@@ -1,16 +1,6 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
-
-## [v2.0.0](https://github.com/GeorgianStan/framework-for-building-libraries/compare/v1.1.0...v2.0.0) (2020-12-18)
-
-### Feature
-
-The repository now contains a boilerplate for building NodeJS global packages as CLI tools as well.
-
-### Chore
-
-- project sturcture updates (split the code in two folders `front-end` and `back-end-cli`)
+All notable changes to front-end will be documented in this file.
 
 ## [v1.1.0](https://github.com/GeorgianStan/framework-for-building-libraries/compare/v1.0.0...v1.1.0) (2020-12-17)
 
