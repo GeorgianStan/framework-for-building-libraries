@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v3.0.0](https://github.com/GeorgianStan/framework-for-building-libraries/compare/v2.0.0...v3.0.0) (2020-12-18)
+
 ## [v2.0.0](https://github.com/GeorgianStan/framework-for-building-libraries/compare/v1.1.0...v2.0.0) (2020-12-18)
 
 ### Feature
