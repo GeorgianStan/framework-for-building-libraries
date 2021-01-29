@@ -48,6 +48,8 @@ const browserConfig = {
     libraryTarget: 'umd',
     globalObject: 'this',
     libraryExport: 'default',
+    umdNamedDefine: true,
+    library: 'MyLibrary',
   },
 };
 

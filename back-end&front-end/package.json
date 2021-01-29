@@ -1,6 +1,6 @@
 {
   "name": "framework-for-building-front-and-back-end-libraries",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A framework for bulding a library for both web and node js targets",
   "scripts": {
     "expose": "node unwrap.js",

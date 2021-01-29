@@ -6,6 +6,8 @@
 - `npm publish` - to publish / update a package
 - `npm unpublish [package_name]` - to delete
 
+---
+
 ## Framework structure
 
 The purpose of this boilerplate/framework is to quickly enable you to start developing `NodeJS` and `Browser` libraries.
@@ -34,15 +36,21 @@ As an example for this behavior `node-fetch` was installed. You can run `npm run
 
 You can modify it with your desired [value](https://webpack.js.org/configuration/devtool/)
 
+---
+
 ### Webpack
 
 Webpack exposes two config objects `nodeConfig` and `browserConfig`. Both of them extend `generalConfig`.
 
 The configuration was inspired from their [documentation](https://webpack.js.org/concepts/targets/).
 
-**!**
+**! The library is exported as default**
 
-The library is exported as default
+#### Browser
+
+In a browser scenario where the library will be added using a `script` tag, then the code will bind to global object `window` using the name from `browserConfig.output.library`. In this case `MyLibrary`.
+
+---
 
 ## Testing
 
@@ -53,6 +61,8 @@ For testing, `Jest` is configured and contains a dummy example.
 `npm run test`
 `npm run test:watch`
 `npm run test:cov`
+
+---
 
 ## Publishing
 
