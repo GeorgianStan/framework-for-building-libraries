@@ -189,7 +189,9 @@ For more indeepth testing, `Jest` and `Cypress` are configured and they both con
 
 ### Cypress
 
-`npx cypress open`
+- start a live server to serve the `index.html` file from `demo` folder.
+- in `cypress/integration/test.spec.js` update the `URL` if required.
+- run `npx cypress open`
 
 ## CDN
 

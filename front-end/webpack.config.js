@@ -40,19 +40,7 @@ const config = {
       },
       {
         test: /\.s?css$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              config: {
-                path: 'postcss.config.js',
-              },
-            },
-          },
-
-          'sass-loader',
-        ],
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
     ],
   },
