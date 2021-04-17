@@ -2,6 +2,13 @@
 
 All notable changes to front-end will be document
 
+## v1.2.1
+
+### Chore
+
+- fix,chore: install additional development dependencies and fix the sass import issue
+- chore: change npm script from start:dev to build:dev
+
 ## v1.2.0
 
 ---
