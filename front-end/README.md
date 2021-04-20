@@ -157,6 +157,12 @@ The exports are available under the name set in `library` property.
 import { isPrimeNumber } from '../src/my-library';
 ```
 
+## Default export
+
+If you want to export by default, you can add the following property, `libraryExport: 'default'`, in `webpack.config.js` under `config.output`.
+
+Then, in your main library file use `export default`, for example `export default class MyClass{}`.
+
 ## Publishing
 
 - In `package.json` add a new property named `files`, with the location to your distribution code.

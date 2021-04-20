@@ -2,6 +2,13 @@
 
 All notable changes to front-end will be document
 
+## v1.3.0
+
+### Chore
+
+- chore,update: eslint configuration changes
+- doc: improve documentation to show how to do a default export
+
 ## v1.2.1
 
 ### Chore
