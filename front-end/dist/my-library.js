@@ -1,1 +1,78 @@
-!function(e,r){"object"==typeof exports&&"object"==typeof module?module.exports=r():"function"==typeof define&&define.amd?define("MyLibrary",[],r):"object"==typeof exports?exports.MyLibrary=r():e.MyLibrary=r()}(this,(function(){return(()=>{"use strict";var e={331:(e,r,t)=>{var o;t.r(r),t.d(r,{isPrimeNumber:()=>n,ErrorMessages:()=>o}),function(e){e.INVALID_NUMBER="Number must be greater then 1"}(o||(o={}));var n=function(e){var r=!0;if(e<=1)throw new Error(o.INVALID_NUMBER);if(2===e)return r;for(var t=2;t<=e/2;t++)e%t==0&&(r=!1);return r}}},r={};function t(o){if(r[o])return r[o].exports;var n=r[o]={exports:{}};return e[o](n,n.exports,t),n.exports}return t.d=(e,r)=>{for(var o in r)t.o(r,o)&&!t.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:r[o]})},t.o=(e,r)=>Object.prototype.hasOwnProperty.call(e,r),t.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t(331)})()}));
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("MyLibrary", [], factory);
+	else if(typeof exports === 'object')
+		exports["MyLibrary"] = factory();
+	else
+		root["MyLibrary"] = factory();
+})(this, () => {
+return /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/my-library.ts":
+/*!***************************!*\
+  !*** ./src/my-library.ts ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"ErrorMessages\": () => (/* binding */ ErrorMessages),\n/* harmony export */   \"isPrimeNumber\": () => (/* binding */ isPrimeNumber)\n/* harmony export */ });\nvar ErrorMessages;\n\n(function (ErrorMessages) {\n  ErrorMessages[\"INVALID_NUMBER\"] = \"Number must be greater then 1\";\n})(ErrorMessages || (ErrorMessages = {})); // * A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers.\n\n\nvar isPrimeNumber = function (num) {\n  var isPrime = true;\n\n  if (num <= 1) {\n    throw new Error(ErrorMessages.INVALID_NUMBER);\n  }\n\n  if (num === 2) {\n    return isPrime;\n  }\n\n  for (var i = 2; i <= num / 2; i++) {\n    if (num % i === 0) {\n      isPrime = false;\n    }\n  }\n\n  return isPrime;\n};\n\n\n\n//# sourceURL=webpack://MyLibrary/./src/my-library.ts?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/my-library.ts"](0, __webpack_exports__, __webpack_require__);
+/******/ 	
+/******/ 	return __webpack_exports__;
+/******/ })()
+;
+});
