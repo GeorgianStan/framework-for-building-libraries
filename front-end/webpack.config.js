@@ -31,7 +31,7 @@ const config = {
         exclude: [/node_modules/, /test/],
         use: [
           {
-            loader: 'babel-loader',
+            loader: "swc-loader"
           },
           {
             loader: 'ts-loader',
